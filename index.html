@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Weather App</title>
+    <link rel="icon" href="weather .png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="api.js" defer></script>
+</head>
+
+<body>
+    <main class="main-container">
+        <header class="input-container">
+            <input class="city-input" type="text" placeholder="Search city">
+            <button class="search-btn">
+                <img src="search.png" alt="search" height="25" width="25">
+            </button>
+        </header>
+        <section class="weather-info" style="display: none;">
+            <div class="location-date-container">
+                <div class="location">
+                    <span class="material-symbols-outlined">
+                        <img src="location_img.png" height="30" width="30">
+                    </span>
+                    <h4 class="country-txt">Jakarta</h4>
+                </div>
+                <h5 class="current-date-txt regular-txt">Fri, 21 march</h5>
+            </div>
+            <div class="weather-summary-container">
+                <img src="cloudy.png" alt="weather" class="weather-summary-img">
+                <div class="weather-summary-info">
+                    <h1 class="temp-txt"> 29 °C</h1>
+                    <h3 class="condition-txt regular-txt">Clouds</h3>
+                </div>
+            </div>
+            <div class="weather-conditions-container">
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        <img src="water.png" height="30" width="30">
+                    </span>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Humidity</h5>
+                        <h5 class="humidity-value-txt">55%</h5>
+                    </div>
+                </div>
+                <div class="weather-conditions-container">
+                    <div class="condition-item">
+                        <span class="material-symbols-outlined">
+                            <img src="wind.png" height="30" width="30">
+                        </span>
+                        <div class="condition-info">
+                            <h5 class="regular-txt">Wind speed</h5>
+                            <h5 class="wind-value-txt">2 M/S</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast-item-container">
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">21 March</h5>
+                    <img src="storm.png" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">21 March</h5>
+                    <img src="storm.png" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">21 March</h5>
+                    <img src="storm.png" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">21 March</h5>
+                    <img src="storm.png" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+            </div>
+        </section>
+        <section class="search-city section-message">
+            <img src="datasearch.png">
+            <h1>Search city</h1>
+            <h4 class="regular-txt">
+                Find out the weather conditions of the city
+            </h4>
+        </section>
+        <section class="not-found section-message" style="display:none;">
+            <img src="error-404.png">
+            <h1>City Not Found</h1>
+            <h4 class="error-message regular-txt"> <!-- Added error-message class -->
+                The city you searched for could not be found
+            </h4>
+        </section>
+    </main>
+</body>
+
+</html>
