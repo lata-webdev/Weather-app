@@ -11,6 +11,9 @@ const windValueTxt = document.querySelector('.wind-value-txt');
 const weatherSummaryImg = document.querySelector('.weather-summary-img');
 const currentDateTxt = document.querySelector('.current-date-txt');
 const forecastItemContainer = document.querySelector('.forecast-item-container');
+const CONFIG = {
+    apiKey: 'edc1e73fc4cd43ed1bd9eff1700bd81e'
+};
 
 searchBtn.addEventListener('click', () => {
     if (cityInput.value.trim() !== '') {
